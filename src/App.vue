@@ -10,37 +10,47 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class='container'>
-    <div class="banner">
-      <header>
-        <Header/>
-      </header>
-    </div>
-
-    <div class="body">
-      <main>
-        <CoffeeList />
-      </main>
-    </div>
+  <div class='App-container'>
+    <img src='src/assets/twigBerriesLeft.png' alt='left twig' class='left-twig' />
+    <img src='src/assets/twigBerriesRight.png' alt='right twig' class='right-twig' />
+    <header>
+      <Header/>
+    </header>
+    <main>
+      <body>
+        <section>
+          <CoffeeList />
+        </section>
+      </body>
+    </main>
+    <footer>
+      footer
+    </footer>
   </div>
 </template>
 
 <style scoped>
 header {
-  line-height: 1.5;
+  align-items: center;
 }
-.container {
-  display: flex;
-  justify-content: center;
+.App-container {
+  display: block;
 }
-.banner {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  top: 50px;
+.left-twig {
+  position: absolute;
+  top: 0;
   left: 0;
-  width: 100%;
-  padding: 10px;
+  width: 400px;
+  height: 400px;
+  order: 1;
+}
+.right-twig {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  order: 2;
 }
 
 </style>

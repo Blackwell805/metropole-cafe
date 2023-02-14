@@ -1,16 +1,10 @@
 <template>
-  <div class='container'>
-    <div class='twig-images'>
-      <img src='src/assets/twigBerriesLeft.png' alt='left twig' class='left-twig' />
-      <img src='src/assets/twigBerriesRight.png' alt='right twig' class='right-twig' />
-    </div>
-    <div>
+    <h1 class='title'>THE METROPOLE CAFE</h1>
+    <div class='center-images'>
       <img src="src/assets/teacup.png" alt="teacup" class='teacup'/>
       <img src="src/assets/ribbon.png" alt="ribbon" class='ribbon'/>
       <img src='src/assets/metropole.png' alt='logo' class='logo' />
     </div>
-    <h1 class='title'>THE METROPOLE CAFE</h1>
-  </div>
 </template>
 
 <script>
@@ -20,25 +14,22 @@ export default {
 </script>
 
 <style scoped>
-.images {
+.center-images {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.twig-images {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
 .teacup {
   position: absolute;
+  top: 95px;
+  width: 450px;
   z-index: 2;
 }
 .ribbon {
   position: absolute;
-  width: 700px;
+  width: 1250px;
   height: 200px;
-  top: 75px;
+  top: 300px;
   z-index: 1;
 }
 .title {
@@ -49,27 +40,11 @@ export default {
   font-family: "Indie Flower", serif;
 }
 .logo {
-  position: center;
-  width: 50px;
-  height: 50px;
+  position: relative;
+  width: 150px;
+  height: 125px;
   z-index: 2;
-  top: 55px;
-  left: -5px;
-}
-.left-twig {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 300px;
-  order: 1;
-}
-.right-twig {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 200px;
-  order: 2;
+  top: 134px;
+  left: -4px;
 }
 </style>
